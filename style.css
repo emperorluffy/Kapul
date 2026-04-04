@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  background-image: linear-gradient(to right, #808080, #cd7f32);
+}
+
+html {
+  font-size: 16px;
+}
+
+.header {
+  width: 100%;
+  height: 8rem;
+  padding: 2px;
+  margin: 2rem auto;
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
+  border-radius: 8px;
+  background-image: linear-gradient(to right, #808080, #cd7f32);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-right: 2.5rem;
+}
+
+.main {
+  width: 100%;
+  height: 35rem;
+  background-color: #808080;
+}
+
+.footer {
+}
+
+.user {
+  width: 100%;
+  height: 35rem;
+  background-color: #808080;
+}
