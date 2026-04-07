@@ -1,0 +1,24 @@
+{
+  "name": "kapul",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emperorluffy/Kapul.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/emperorluffy/Kapul/issues"
+  },
+  "homepage": "https://github.com/emperorluffy/Kapul#readme",
+  "devDependencies": {
+    "sass": "^1.99.0"
+  }
+}
