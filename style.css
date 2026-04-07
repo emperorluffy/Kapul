@@ -11,7 +11,7 @@ html {
 
 .header {
   width: 100%;
-  height: 8rem;
+  height: 5rem;
   padding: 2px;
   margin: 2rem auto;
   /* border: 1px solid rgba(255, 255, 255, 0.2); */
@@ -22,7 +22,7 @@ html {
   align-items: center;
   justify-content: space-between;
 }
-.nav {
+.nav-container {
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -42,4 +42,29 @@ html {
   width: 100%;
   height: 35rem;
   background-color: #808080;
+}
+.btn {
+  border: none;
+  padding: 12px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  background-color: #a66324;
+}
+.btn-signin {
+  background-color: #f0f2f5;
+  color: #a66324;
+}
+
+/* Sign Up - Primary Blue Background */
+.btn-signup {
+  background-color: #a66324;
+  color: #ffffff;
+}
+
+/* Hover effect for a little interactivity */
+.btn:hover {
+  opacity: 0.8;
 }
