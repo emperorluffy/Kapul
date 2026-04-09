@@ -2,14 +2,15 @@
 
 .header {
   display: flex;
-  justify-content: space-between; // Separates logo and nav to opposite ends
-  align-items: center; // Centers items vertically
+  justify-content: space-between;
+  align-items: center;
   padding: 2rem 4rem;
   background: linear-gradient(
     to right,
     $color-secondary-light,
     $color-primary-light
   );
+  border: 1px solid $color-primary-light;
 
   &__logo {
     font-weight: bold;
@@ -19,7 +20,7 @@
   &__nav {
     display: flex;
     align-items: center;
-    gap: 2.5rem; // Controls spacing between all items in the nav
+    gap: 2.5rem;
   }
 
   &__link {
@@ -37,7 +38,6 @@
   }
 }
 
-// Global button styles
 .btn {
   &,
   &:link,
