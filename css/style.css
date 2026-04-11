@@ -24,8 +24,15 @@ body {
   border: 1px solid #e26d0e;
 }
 .header__logo {
-  font-weight: bold;
+  font-weight: 800;
   text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  background-color: #953e04;
+  /* If you want the gradient on the TEXT itself, add these: */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .header__nav {
   display: flex;
@@ -63,8 +70,68 @@ body {
 }
 
 .menu {
-  background-color: #807e7b;
-  height: 90vh;
+  height: 60rem;
+  background-color: #d8d5d1;
+}
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+  width: 100%;
+}
+.card__side {
+  height: 30rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+.card__side--front {
+  background-color: #fff;
+}
+.card__side--back {
+  transform: rotateY(180deg);
+}
+.card__side--back-1 {
+  background-image: linear-gradient(to right bottom, #807e7b, #d8d5d1);
+}
+.card__side--back-2 {
+  background-image: linear-gradient(to right bottom, #807e7b, #d8d5d1);
+}
+.card__side--back-3 {
+  background-image: linear-gradient(to right bottom, #807e7b, #d8d5d1);
+}
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
+.card__content {
+  padding: 2rem;
+  text-align: center;
+  color: inherit;
+}
+.card__content h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.card__content p {
+  font-size: 1.5rem;
+}
+
+.menu_intro {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
