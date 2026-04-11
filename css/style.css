@@ -108,6 +108,12 @@ body {
 .card__side--back-3 {
   background-image: linear-gradient(to right bottom, #807e7b, #d8d5d1);
 }
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
 .card__content {
   padding: 2rem;
   text-align: center;
